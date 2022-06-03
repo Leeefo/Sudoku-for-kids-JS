@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kids Sudoku</title>
+</head>
+
+<body>
+    <!-- #region container -->
+    <div class="container h-100">
+
+        <div class="row align-items-center glass p-2 px-5 rounded-3 shadow g-0">
+            <div class="col-8">
+                <h1 class="text-capitalize" id="userName">
+                </h1>
+            </div>
+            <div class="col-2">Time : <span id="time"></span> Seconds</div>
+            <div class="col-2">Wrong Answers : <span id="wrong-answers">0</span></div>
+        </div>
+
+        <!-- #region gallary -->
+        <div class=" col-12 glass p-2 my-2 rounded-3 shadow">
+            <div class="imgs-container d-flex justify-content-evenly">
+
+            </div>
+            <div class="nums-container d-flex justify-content-evenly">
+
+            </div>
+        </div>
+        <!-- #endregion gallary -->
+
+        <!-- #region board -->
+        <form class="row g-0 align-items-center justify-content-center">
+
+            <div class="col-12 glass p-2 rounded-3 shadow">
+                <div class="row g-0 justify-content-center align-items-center">
+                    <div class="board col-9 ms-3 justify-content-center d-none">
+                    </div>
+                    <div class="col-2 mx-auto d-flex flex-column justify-content-center">
+                        <button id="startBtn" type="button" class="btn btn-primary  mt-4">Start</button>
+                        <a href="index.html" class=" btn btn-primary my-4">Home</a>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </form>
+        <!-- #endregion board -->
+
+
+    </div>
+    <!-- #endregion container -->
+
+    <!-- #region modal -->
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Game Over</h5>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal"></button> -->
+                </div>
+                <div class="modal-body">
+                    Play Again or Return to Home page
+                </div>
+                <div class="modal-footer">
+                    <a href="index.html" type="button" class="btn btn-secondary">Return Home</a>
+                    <a href="#" id="play-again" type="button" class="btn btn-primary">Play Again</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- #endregion modal -->
+
+
+
+    <script src="/js/bootstrap.bundle.js"></script>
+    <script type="module" src="/js/initialBoard.js"></script>
+    <script type="module" src="/js/board.js"></script>
+    <script type="module" src="/js/control.js"></script>
+</body>
+
+</html>

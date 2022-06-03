@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kids Sudoku</title>
+</head>
+
+<body>
+    <div class="container h-100">
+        <div class="d-flex h-100  align-items-center justify-content-center">
+            <form method="get" action="gallary.html" class="col-6 glass p-4 rounded-3 shadow">
+                <div class="mb-3">
+                    <label for="userName" class="form-label h5">User Name</label>
+                    <input type="text" name="userName" class="form-control" id="userName" required>
+
+                </div>
+                <div class="mb-5">
+                    <label for="gameLevel" class="form-label h5">Password</label>
+                    <select class="form-select" name="gameLevel" id="gameLevel" required>
+                        <option value="" selected>
+                            Select game level
+                        </option>
+                        <option value="1">4*4</option>
+                        <option value="2">9*9</option>
+                    </select>
+                </div>
+
+                <div class="d-grid">
+                    <button type="submit" class="d-block fw-bold btn-lg btn-primary">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

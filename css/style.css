@@ -1,0 +1,72 @@
+body {
+  background-image: url(../background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.glass {
+  color: white;
+  background: rgba(137, 104, 48, 0.656);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.img-style, .img-container div img {
+  height: 100%;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  outline: 1px solid yellow;
+  background-color: white;
+  box-shadow: 0px 3px 3px black;
+  transition: all ease 0.2s;
+  transition-property: transform, ouline box-shadow;
+}
+.img-style:hover, .img-container div img:hover {
+  transform: scale(1.05);
+  outline: 3px solid yellow;
+  box-shadow: 0px 7px 5px black;
+}
+
+.img-container {
+  max-height: 50vh !important;
+}
+.img-container div {
+  max-height: 70px;
+  text-align: center;
+}
+.num-style {
+  width: 50px;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 24px;
+  text-shadow: 1px 1px 1px black;
+}
+
+.cell {
+  background-color: beige;
+  border: 1px solid brown;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.active-cell {
+  outline: 3px solid saddlebrown;
+  box-shadow: inset 0px 5px 5px rgb(197, 197, 69);
+  z-index: 20;
+}
+
+[data-initial="0"] {
+  background-color: rgb(130, 158, 189);
+}
+
+.wrong {
+  background-color: rgba(174, 18, 18, 0.796);
+}
+
+.right {
+  background-color: rgba(113, 193, 76, 0.738);
+}/*# sourceMappingURL=style.css.map */
